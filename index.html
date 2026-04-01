@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overclassified</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    .cell { transition: all 0.3s; }
+    .cell:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-gray-900">Overclassified</a>
+      <div class="space-x-8">
+        <a href="#resources" class="hover:text-blue-600">Resources</a>
+        <a href="#buy" class="hover:text-blue-600">Buy the Book</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
+          Overclassified
+        </h1>
+        <p class="mt-4 text-xl text-gray-600">
+          [Your subtitle or tagline here — e.g., “The book that exposes government secrecy”]
+        </p>
+        <div class="mt-8 flex gap-4">
+          <a href="#resources" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-medium hover:bg-blue-700">Explore Resources</a>
+          <a href="#buy" class="border border-gray-300 px-8 py-4 rounded-xl font-medium hover:bg-gray-50">Buy the Book</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <!-- Replace the src URL with your actual book cover image later -->
+        <img src="https://picsum.photos/id/1015/600/800" alt="Book Cover" class="rounded-2xl shadow-2xl max-w-[320px] w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Grid -->
+  <section id="resources" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">Action Resources</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-md mx-auto">Pre-written letters, videos, and tools to help you take action</p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Example Cell 1 -->
+        <div class="cell bg-white rounded-3xl p-6 shadow-sm">
+          <div class="aspect-video bg-gray-200 rounded-2xl mb-4 overflow-hidden">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9wgxcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 class="font-semibold text-xl mb-2">Video Title 1</h3>
+          <p class="text-gray-600 mb-4">Short description of this video and why it matters.</p>
+          <a href="#" class="text-blue-600 hover:underline">Watch on YouTube →</a>
+        </div>
+
+        <!-- Example Cell 2 -->
+        <div class="cell bg-white rounded-3xl p-6 shadow-sm">
+          <div class="h-48 bg-amber-100 rounded-2xl mb-4 flex items-center justify-center text-6xl">📄</div>
+          <h3 class="font-semibold text-xl mb-2">Fire-Off Letter to Congress</h3>
+          <p class="text-gray-600 mb-4">Ready-to-send letter template about overclassification.</p>
+          <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:underline">Download PDF <i class="fas fa-download"></i></a>
+        </div>
+
+        <!-- Add more cells here later — I'll show you how -->
+        <div class="cell bg-white rounded-3xl p-6 shadow-sm">
+          <div class="h-48 bg-blue-100 rounded-2xl mb-4 flex items-center justify-center text-6xl">🏛️</div>
+          <h3 class="font-semibold text-xl mb-2">Find Your Representatives</h3>
+          <p class="text-gray-600 mb-4">Quick links to your senators and congressperson.</p>
+          <a href="#" class="text-blue-600 hover:underline">Locate Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy the Book -->
+  <section id="buy" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Get the Book</h2>
+      <p class="text-xl text-gray-600 mb-8">Available now on Amazon, Barnes & Noble, and more.</p>
+      <a href="#" class="bg-gray-900 text-white px-10 py-5 rounded-3xl text-xl font-medium inline-block hover:bg-black">Buy on Amazon →</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12 text-center">
+    <p>&copy; 2026 Overclassified. All rights reserved.</p>
+  </footer>
+</body>
+</html>
